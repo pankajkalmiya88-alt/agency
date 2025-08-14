@@ -32,8 +32,6 @@ export default function Login() {
   }, [emailParam]);
 
 
-
-
   const handleChange = (e) => {
     setEmail(e.target.value);
     if (touched) setTouched(false); // clear error when typing
