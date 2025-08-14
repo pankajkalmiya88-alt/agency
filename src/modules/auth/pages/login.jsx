@@ -8,8 +8,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   // Strict email regex: prevents trailing characters after TLD
-  const EMAIL_REGEX =
-    /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const EMAIL_REGEX =/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const emailIsValid = EMAIL_REGEX.test(email.trim());
   const showError = touched && !emailIsValid && email;
 

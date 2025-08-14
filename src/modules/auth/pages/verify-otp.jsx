@@ -6,7 +6,7 @@ const OTP_TIMER_DURATION = 30; // seconds
 
 export default function VerifyOtp() {
     const { email: emailParam } = useParams();
-    const navigate = useNavigate();
+    const navigate = useNavigate(); 
 
     const [email, setEmail] = useState("");
     const [otp, setOtp] = useState("");
