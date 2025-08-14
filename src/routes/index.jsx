@@ -4,6 +4,7 @@ import { lazy, Suspense } from "react";
 // Auth
 const AuthLayout = lazy(() => import("../modules/auth/layout/auth-layout"));
 const Login = lazy(() => import("../modules/auth/pages/login"));
+const VerifyOtp = lazy(() => import("../modules/auth/pages/verify-otp"));
 
 // Onboarding
 const OnboardLayout = lazy(() => import("../modules/onboarding/layout/onboard-layout"));
@@ -44,8 +45,9 @@ export default function AppRoutes() {
 
             {/* Relative child paths */}
             <Route path="login" element={<Login />} />
+            <Route path="login/:email" element={<Login />} />
+            <Route path="verify-otp/:email" element={<VerifyOtp />} />
           </Route>
-
 
 
 
